@@ -1,0 +1,6 @@
+<h1><%= pluralize(@users.size, 'User') %></h1>
+
+<% @users.each do |user| %>
+	<%= link_to user.name, user %>
+
+<% end %>
